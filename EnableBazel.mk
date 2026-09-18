@@ -1,5 +1,5 @@
 ifeq ($(call is-board-platform-in-list,pineapple cliffs volcano),true)
-LOCAL_MODULE_DDK_BUILD := true
+#LOCAL_MODULE_DDK_BUILD := true
 
 LOCAL_MODULE_DDK_SUBTARGET_REGEX := "$(TARGET_BOARD_PLATFORM)_audio.*"
 
@@ -18,6 +18,7 @@ LOCAL_MODULE_KO_DIRS += soc/swr_ctrl_dlkm.ko
 LOCAL_MODULE_KO_DIRS += soc/snd_event_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/wcd_core_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/mbhc_dlkm.ko
+LOCAL_MODULE_KO_DIRS += asoc/codecs/sdca_registers_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/swr_dmic_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/wcd9xxx_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/swr_haptics_dlkm.ko
@@ -62,6 +63,7 @@ LOCAL_MODULE_KO_DIRS += soc/swr_ctrl_dlkm.ko
 LOCAL_MODULE_KO_DIRS += soc/snd_event_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/wcd_core_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/mbhc_dlkm.ko
+LOCAL_MODULE_KO_DIRS += asoc/codecs/sdca_registers_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/wcd9xxx_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/swr_haptics_dlkm.ko
 LOCAL_MODULE_KO_DIRS += asoc/codecs/stub_dlkm.ko
