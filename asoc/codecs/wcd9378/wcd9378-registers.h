@@ -867,6 +867,7 @@ enum {
 
 #define WCD9378_NUM_REGISTERS                  (WCD9378_SMP_MIC_CTRL2_DEV_VER - WCD9378_BASE + 1)
 #define WCD9378_MAX_REGISTER                   (WCD9378_MESSAGE2 + 1)
+#define WCD9378_REGISTERS_ARRAY_NUM            (824)
 
 #define WCD9378_REGISTERS_ARRAY_NUM            (824)
 
