@@ -171,6 +171,8 @@ def define_pineapple(t, v, lt=None):
             "CONFIG_SND_SOC_WCD9XXX_V2",
             "CONFIG_SND_SOC_WCD_MBHC_ADC",
             "CONFIG_MSM_EXT_DISPLAY",
+            "OPLUS_ARCH_EXTENDS",
+            "OPLUS_FEATURE_RINGTONE_HAPTIC",
         ],
         lunch_target = lt,
     )

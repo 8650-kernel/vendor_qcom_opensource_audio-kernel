@@ -12,6 +12,7 @@ ddk_headers(
         "include/asoc/*.h",
         "include/bindings/*.h",
         "include/dsp/*.h",
+        "include/feedback/*.h",
         "include/ipc/*.h",
         "include/soc/*.h"
     ]),
