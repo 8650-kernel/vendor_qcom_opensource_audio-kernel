@@ -1675,4 +1675,3 @@ const u32 wcd9378_reg_array[] = {
 	WCD9378_MESSAGE1,
 	WCD9378_MESSAGE2,
 };
-

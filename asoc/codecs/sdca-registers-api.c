@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * Copyright (c) 2025 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 #include <asoc/sdca-registers-api.h>
 #include <linux/component.h>
@@ -271,4 +271,3 @@ void sdca_devices_debugfs_dentry_remove(struct sdca_debugfs_info *debugfs_info)
 EXPORT_SYMBOL_GPL(sdca_devices_debugfs_dentry_remove);
 
 MODULE_LICENSE("GPL");
-
