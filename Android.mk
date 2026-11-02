@@ -231,6 +231,15 @@ include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###########################################################
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES           := $(AUDIO_SRC_FILES)
+LOCAL_MODULE              := sdca_registers_dlkm.ko
+LOCAL_MODULE_KBUILD_NAME  := asoc/codecs/sdca_registers_dlkm.ko
+LOCAL_MODULE_TAGS         := optional
+LOCAL_MODULE_DEBUG_ENABLE := true
+LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
+include $(DLKM_DIR)/Build_external_kernelmodule.mk
+###########################################################
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES           := $(AUDIO_SRC_FILES)
 LOCAL_MODULE              := mbhc_dlkm.ko
 LOCAL_MODULE_KBUILD_NAME  := asoc/codecs/mbhc_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
@@ -573,3 +582,7 @@ endif
 endif # DLKM check
 endif # supported target check
 endif
+#ifdef OPLUS_ARCH_EXTENDS
+#Add for oplus audio extends driver
+-include $(LOCAL_PATH)/oplus/build.mk
+#endif /* OPLUS_ARCH_EXTENDS */
