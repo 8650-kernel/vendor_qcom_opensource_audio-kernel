@@ -154,7 +154,26 @@ def define_pineapple(t, v, lt=None):
             "wcd939x_dlkm",
             "wcd939x_slave_dlkm",
             "wcd9378_dlkm",
-            "wcd9378_slave_dlkm"
+            "wcd9378_slave_dlkm",
+#ifdef OPLUS_ARCH_EXTENDS
+#add for oplus audio extends driver
+            "oplus_audio_extend",
+            "oplus_audio_aw882xx",
+            "oplus_audio_tfa98xx_v6",
+            "oplus_audio_sipa",
+            "oplus_audio_sipa_tuning",
+            "oplus_audio_pa_manager",
+#add for oplus audio aw87xxx driver
+            "oplus_audio_aw87xxx",
+#endif /* OPLUS_ARCH_EXTENDS */
+#ifdef CONFIG_AUDIO_DAEMON_KERNEL_QCOM
+#add for oplus audio daemon kernel
+            "oplus_audio_daemon",
+#endif /* CONFIG_AUDIO_DAEMON_KERNEL_QCOM */
+#ifdef CONFIG_AUDIO_NETLINK_KERNEL
+#add for oplus audio netlink kernel
+            "oplus_audio_netlink",
+#endif /* CONFIG_AUDIO_NETLINK_KERNEL */
         ],
         config_options = [
             "CONFIG_SND_SOC_PINEAPPLE",
@@ -171,6 +190,12 @@ def define_pineapple(t, v, lt=None):
             "CONFIG_SND_SOC_WCD9XXX_V2",
             "CONFIG_SND_SOC_WCD_MBHC_ADC",
             "CONFIG_MSM_EXT_DISPLAY",
+#ifdef OPLUS_ARCH_EXTENDS
+#add for oplus audio extends driver
+            "OPLUS_ARCH_EXTENDS",
+            "OPLUS_FEATURE_SPEAKER_MUTE",
+            "OPLUS_FEATURE_RINGTONE_HAPTIC",
+#endif /* OPLUS_ARCH_EXTENDS */
         ],
         lunch_target = lt,
     )
